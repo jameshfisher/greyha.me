@@ -1,4 +1,6 @@
 *.sqlite3
 *.aes
+yesod-devel
 dist
 static/tmp
+*.keter

@@ -10,10 +10,10 @@ import           Control.Applicative  as Import (pure, (<$>), (<*>))
 import           Data.Text            as Import (Text)
 
 import           Foundation           as Import
-import           Model                as Import
 import           Settings             as Import
 import           Settings.Development as Import
 import           Settings.StaticFiles as Import
+import           Data.Aeson           as Import (toJSON)
 
 #if __GLASGOW_HASKELL__ >= 704
 import           Data.Monoid          as Import
