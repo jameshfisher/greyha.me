@@ -1,18 +1,18 @@
 $doctype 5
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="language" content="en-US" /> <!-- British English sucks -->
+    <meta name="description" content="What do you want, Gandalf Greyhame?" />
+    <meta name="author" content="James H Fisher <jameshfisher@gmail.com>" />
 
     <title>#{pageTitle pc}
-    <meta name="description" content="What do you want, Gandalf Greyhame?">
-    <meta name="author" content="James Fisher">
 
     ^{pageHead pc}
 
-  <body style="background-image: url('/static/img/gandalf.jpg'); background-size: 500px;">
+  <body>
     <div class="container">
       <header>
       <div id="main" role="main">
         ^{pageBody pc}
       <footer>
-        #{extraCopyright $ appExtra $ settings master}

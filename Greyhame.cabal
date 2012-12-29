@@ -19,6 +19,14 @@ library
                      Settings.StaticFiles
                      Settings.Development
                      Handler.Home
+                     Handler.CV
+                     Handler.CV.Common
+                     Handler.CV.Links
+                     Handler.CV.Sections.About
+                     Handler.CV.Sections.Education
+                     Handler.CV.Sections.Experience
+                     Handler.CV.Sections.Skills
+                     Handler.CV.Sections.Top
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
@@ -63,6 +71,8 @@ library
                  , warp                          >= 1.3        && < 1.4
                  , data-default
                  , aeson
+                 , hxt
+                 , blaze-markup
 
 executable         Greyhame
     if flag(library-only)

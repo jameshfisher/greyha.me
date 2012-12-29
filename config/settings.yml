@@ -1,8 +1,8 @@
 Default: &defaults
   host: "*4" # any IPv4 host
-  port: 8080
-  approot: "http://localhost:8080"
-  copyright: All content released under the GNU Affero General Public License, version 3.
+  port: 3000
+  approot: "http://localhost:3000"
+  copyright: All content copyright James H Fisher <jameshfisher@gmail.com> unless otherwise stated.
   #analytics: UA-YOURCODE
 
 Development:

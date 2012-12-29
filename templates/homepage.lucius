@@ -1,0 +1,4 @@
+ body {
+  background-image: url('/static/img/gandalf.jpg');
+  background-size: 500px;
+}
