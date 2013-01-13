@@ -1,0 +1,11 @@
+<div .row>
+  <div .span6>
+    <h2>Shit that's important
+    $forall imp <- shitThatsImportant
+      <div class="alert alert-error">
+        ^{imp}
+  <div .span6>
+    <h2>Shit that's not important
+    $forall notimp <- shitThatsNotImportant
+      <div class="alert alert-info">
+        ^{notimp}

@@ -8,6 +8,8 @@
             <a href=@{HomeR}>Home
           <li>
             <a href=@{CVR}>CV
+          <li>
+            <a href=@{ImportantR}>Shit that's important
 
 <div class="container">
   $maybe msg <- mmsg
