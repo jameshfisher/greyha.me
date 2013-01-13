@@ -45,7 +45,8 @@ data Link
   | LinkPembrokeHouse
   | LinkCoursera
   | LinkCourseraScala
-  | LinkCourseraCrypto
+  | LinkCourseraScalaCertificate
+  | LinkCourseraProgrammingLanguages
   | LinkMeLinkedIn
   | LinkMeBitbucket
   | LinkMeGitHub
@@ -94,7 +95,8 @@ mkLink l = case l of
   LinkPembrokeHouse       -> link "http://www.pembrokehouse.sc.ke/"                          "Pembroke House"
   LinkCoursera            -> link "https://www.coursera.org/"                                "Coursera"
   LinkCourseraScala       -> link "https://www.coursera.org/course/progfun"                  "Functional Programming Principles in Scala"
-  LinkCourseraCrypto      -> link "https://www.coursera.org/course/crypto"                   "Cryptography"
+  LinkCourseraScalaCertificate -> link "/static/certificates/coursera_scala.pdf"             "certificate"
+  LinkCourseraProgrammingLanguages      -> link "https://www.coursera.org/course/proglang"                   "Programming Languages"
   LinkMeLinkedIn          -> link "http://www.linkedin.com/profile/view?id=34422393"         "LinkedIn"
   LinkMeBitbucket         -> link "https://bitbucket.org/eegg"                               "Bitbucket"
   LinkMeGitHub            -> link "http://github.com/eegg"                                   "GitHub"

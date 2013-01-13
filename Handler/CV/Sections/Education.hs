@@ -3,22 +3,23 @@ module Handler.CV.Sections.Education (educationSection) where
 import Prelude
 import Text.XML.HXT.Core (XmlTree, ArrowXml, sattr, txt, mkelem)
 import Handler.CV.Common (h2, h3, ul, strong, link, cls, section, attrVal, mk, trs, q)
-import Handler.CV.Links (mkLink, Link(LinkCRGS, LinkGreyFriars, LinkMScIndividualProjectPresentation, LinkCoursera, LinkCourseraScala, LinkCourseraCrypto))
+import Handler.CV.Links (mkLink, Link(LinkCRGS, LinkGreyFriars, LinkMScIndividualProjectPresentation,
+  LinkCoursera,LinkCourseraScala, LinkCourseraScalaCertificate, LinkCourseraProgrammingLanguages))
 
 educationSection :: (ArrowXml a) => a n XmlTree
 educationSection = section [cls "educationSection"]
   [ h2 "Education"
-  , mkelem "table" [cls "firstColFixedWidth"]
+  , mkelem "table" [cls "table table-quiet"]
     [ mk "tbody" $ trs [ msc, ba, aLevels, gcses ] ]
   , h3 "Other courses"
-  , mkelem "table" [cls "firstColFixedWidth"]
+  , mkelem "table" [cls "table table-quiet"]
     [ mk "tbody" $ trs
-      [ attrVal [txt "Sep.–Nov. 2012"] []
+      [ attrVal [txt "Sep.Dec. 2012"] []
         [ mk "q" [ mkLink LinkCourseraScala ]
-        , txt " at ", mkLink LinkCoursera, txt ". In progress."
+        , txt " at ", mkLink LinkCoursera, txt ". Completed with full marks (", mkLink LinkCourseraScalaCertificate, txt ")."
         ]
-      , attrVal [txt "Nov.–Dec. 2012"] []
-        [ mk "q" [ mkLink LinkCourseraCrypto ]
+      , attrVal [txt "Jan.–Dec. 2013"] []
+        [ mk "q" [ mkLink LinkCourseraProgrammingLanguages ]
         , txt " at ", mkLink LinkCoursera, txt ". In progress."
         ]
       ]

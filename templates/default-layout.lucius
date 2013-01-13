@@ -1,0 +1,16 @@
+body, p {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+table.table.table-quiet {
+  th, td {
+    border-top: none;
+  }
+}
+
+/* Override bootstrap */
+table.table tbody tr:hover {
+  td, th {
+    background-color: inherit;
+  }
+}
