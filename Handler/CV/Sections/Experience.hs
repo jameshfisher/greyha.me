@@ -17,8 +17,9 @@ yudu, lm, gilgilTrust, pembrokeHouse, hsk, caringHomesDB, caringHomesVarious :: 
 
 yudu =
   attrVal [txt "May 2012–present"] [] $
-  [ strong "Software Developer at ", mk "strong" [mkLink LinkYUDU]
-  , txt ", working as part of the YUDU team at ", mkLink LinkSoftwire
+  [ strong "Software Developer at ", mk "strong" [mkLink LinkYUDU], txt ". "
+  , txt "I am currently the lead in a team of three YUDU developers "
+  , txt " working alongside the YUDU team at ", mkLink LinkSoftwire
   , txt ". I am working on feature requests, bug fixes, and maintenance of the code-base for client-side and server-side software. "
   , txt "Technologies used include "] ++ (csvAnd [mkLink LinkJava, mkLink LinkEnterpriseJavaBeans, mkLink LinkSpring, mkLink LinkAS3, mkLink LinkGit]) ++ 
   [ txt "."

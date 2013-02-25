@@ -1,3 +1,10 @@
+body {
+  background-image: url(@{StaticR img_james_fisher_profile_jpg});
+  background-position: left 40px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 body, p {
   font-family: "Open Sans", Arial, sans-serif;
 }

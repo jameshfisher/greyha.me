@@ -2,13 +2,10 @@
 <section>#{conv topSection}
 <section>#{conv aboutSection}
 <section>#{conv educationSection}
-<section>#{conv skillsSection}
 <section>#{conv experienceSection}
+<section>#{conv skillsSection}
 <section .endNode .print>
   <p>
     This document is available at #
-    <a href="http://eegg.github.com/cv">http://eegg.github.com/cv/
+    <a href=@{CVR}>http://greyha.me/cv
     .
-  <section .screen #formats>
-    <a href="cv.txt"><img src="/static/img/cv/txt.png" alt="Get the plaintext"/>
-    <a href="cv.txt"><img src="/static/img/cv/acrobat.png" alt="Get the PDF"/>

@@ -42,8 +42,5 @@ topSection = section (item "http://data-vocabulary.org/Person")
           ]
         ]
       ]
-    , division [cls "span4"]
-      [ division [cls "photo"] []
-      ]
     ]
   ]

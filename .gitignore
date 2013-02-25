@@ -4,3 +4,4 @@ yesod-devel
 dist
 static/tmp
 *.keter
+*.sublime-workspace

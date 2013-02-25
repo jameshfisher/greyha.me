@@ -14,13 +14,14 @@ educationSection = section [cls "educationSection"]
   , h3 "Other courses"
   , mkelem "table" [cls "table table-quiet"]
     [ mk "tbody" $ trs
-      [ attrVal [txt "Sep.Dec. 2012"] []
-        [ mk "q" [ mkLink LinkCourseraScala ]
-        , txt " at ", mkLink LinkCoursera, txt ". Completed with full marks (", mkLink LinkCourseraScalaCertificate, txt ")."
-        ]
-      , attrVal [txt "Jan.–Dec. 2013"] []
+      [ attrVal [txt "Jan.–Dec. 2013"] []
         [ mk "q" [ mkLink LinkCourseraProgrammingLanguages ]
         , txt " at ", mkLink LinkCoursera, txt ". In progress."
+        , txt " Submissions available on request at ", link "https://bitbucket.org/eegg/coursera-proglang" "https://bitbucket.org/eegg/coursera-proglang", txt "."
+        ]
+      , attrVal [txt "Sep.Dec. 2012"] []
+        [ mk "q" [ mkLink LinkCourseraScala ]
+        , txt " at ", mkLink LinkCoursera, txt ". Completed with ", strong "full marks", txt " (", mkLink LinkCourseraScalaCertificate, txt ")."
         ]
       ]
     ]
