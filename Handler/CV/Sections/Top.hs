@@ -13,7 +13,7 @@ topSection' = [hamlet|
   <span style="display: none;" itemprop="name">James Harrison Fisher
   <div .row>
     <div .span8>
-      <table .table .table-condensed .table-quiet>
+      <table .table .table-nopadding .table-quiet>
         <tbody>
           <tr>
             <th>Birth date
@@ -28,7 +28,7 @@ topSection = section (item "http://data-vocabulary.org/Person")
   [ htmlSpan [sattr "style" "display: none;", prop "name"] [txt "James Harrison Fisher"]
   , division [cls "row"]
     [ division [cls "span8"]
-      [ mkelem "table" [cls "table table-condensed table-quiet"]
+      [ mkelem "table" [cls "table table-nopadding table-quiet table-fix-first-col"]
         [ mk "tbody" $ trs
           [ attrVal [txt "Birth date"] [] [txt "October 1987"]
           , attrVal [txt "Address"] ([prop "address"]++(item "http://data-vocabulary.org/Address")) $ csv
@@ -36,9 +36,12 @@ topSection = section (item "http://data-vocabulary.org/Person")
               , htmlSpan [prop "region"] [txt "London"]
               , htmlSpan [prop "postal-code"] [txt "N6 4AG"]
               ]
-          , attrVal [txt "Email"] [] [email "jameshfisher@gmail.com"]
+          , attrVal [txt "Email"] []
+            [ email "jameshfisher@gmail.com"
+            , txt " (", link "/static/keys/public.gpg" "public key", txt ")"
+            ]
           , attrVal [txt "Mobile"] [] [txt $ obscure "07951 498 897"]
-          , attrVal [txt "Find me on"] [] $ csv $ map mkLink [ LinkMeLinkedIn, LinkMeBitbucket, LinkMeGitHub, LinkMeReddit ]
+          , attrVal [txt "Find me"] [] $ csv $ map mkLink [ LinkMeLinkedIn, LinkMeBitbucket, LinkMeGitHub, LinkMeReddit ]
           ]
         ]
       ]

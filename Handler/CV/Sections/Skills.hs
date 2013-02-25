@@ -22,7 +22,7 @@ skillBox =
     , [ mk "strong" [mkLink LinkJavaScript], mkLink LinkPython ]
     , [ mk "strong" [mkLink LinkJQuery], mkLink LinkJQueryUI ]
     , map mkLink [ LinkApache, LinkNodeJS, LinkMVC ]
-    , (map mkLink [ LinkHTML5, LinkCSS3, LinkXML, LinkJSON ]) ++ [ txt "etc." ]
+    , (map mkLink [ LinkHTML5 ]) ++ [ txt "etc." ]
     , [ mk "strong" [mkLink LinkGit]]
     , [ mk "strong" [mkLink LinkQuickCheck], mkLink LinkXUnit ]
     , [ mkLink LinkSQL, mkLink LinkOracleDatabase ]

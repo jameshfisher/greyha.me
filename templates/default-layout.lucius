@@ -1,13 +1,19 @@
 body {
   background-image: url(@{StaticR img_james_fisher_profile_jpg});
-  background-position: left 40px;
+  background-position: -80px 40px;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
 body, p {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Droid Serif", Georgia, serif;
 }
+
+/* override bootstrap font sizes */
+body, p { font-size: 18px; }
+body, .table th, .table td, p, li { line-height: 27px; }
+
+h1,h2,h3,h4,h5,h6 { line-height: 54px; }
 
 table.table.table-quiet {
   th, td {
@@ -20,4 +26,22 @@ table.table tbody tr:hover {
   td, th {
     background-color: inherit;
   }
+}
+
+table.table.table-nopadding th, table.table.table-nopadding td {
+  padding: 0;
+}
+
+table.table.table-nopaddingsides th:first-child,
+table.table.table-nopaddingsides td:first-child {
+  padding-left: 0;
+}
+
+table.table.table-nopaddingsides th:last-child,
+table.table.table-nopaddingsides td:last-child {
+  padding-right: 0;
+}
+
+a {
+  color: #6B2500;
 }

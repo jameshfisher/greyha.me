@@ -9,17 +9,17 @@ import Handler.CV.Links (mkLink, Link(LinkCRGS, LinkGreyFriars, LinkMScIndividua
 educationSection :: (ArrowXml a) => a n XmlTree
 educationSection = section [cls "educationSection"]
   [ h2 "Education"
-  , mkelem "table" [cls "table table-quiet"]
+  , mkelem "table" [cls "table table-quiet table-nopaddingsides table-fix-first-col"]
     [ mk "tbody" $ trs [ msc, ba, aLevels, gcses ] ]
   , h3 "Other courses"
-  , mkelem "table" [cls "table table-quiet"]
+  , mkelem "table" [cls "table table-quiet table-nopaddingsides table-fix-first-col"]
     [ mk "tbody" $ trs
       [ attrVal [txt "Jan.–Dec. 2013"] []
         [ mk "q" [ mkLink LinkCourseraProgrammingLanguages ]
         , txt " at ", mkLink LinkCoursera, txt ". In progress."
         , txt " Submissions available on request at ", link "https://bitbucket.org/eegg/coursera-proglang" "https://bitbucket.org/eegg/coursera-proglang", txt "."
         ]
-      , attrVal [txt "Sep.Dec. 2012"] []
+      , attrVal [txt "Sep.–Dec. 2012"] []
         [ mk "q" [ mkLink LinkCourseraScala ]
         , txt " at ", mkLink LinkCoursera, txt ". Completed with ", strong "full marks", txt " (", mkLink LinkCourseraScalaCertificate, txt ")."
         ]
@@ -56,7 +56,7 @@ ba =
 aLevels =
   attrVal [txt "2004–6"] []
   [ txt "Achieved the following ", strong "six A-levels", txt ":"
-  , mkelem "table" [cls "aLevelTable"]
+  , mkelem "table" [cls "table table-nopadding"]
     [ mk "tbody" $
       [ mk "tr" $ map (\s -> mk "th" [ txt s]) ["Grade", "Subject", "Institution"]
       ] ++ (map toRow subjects)

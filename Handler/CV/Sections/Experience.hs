@@ -8,7 +8,7 @@ import Handler.CV.Links (mkLink, Link(LinkYUDU, LinkSoftwire, LinkJava, LinkEnte
 experienceSection :: (ArrowXml a) => a n XmlTree
 experienceSection = section [cls "experienceSection"]
   [ h2 "Experience"
-  , mkelem "table" [cls "table table-quiet"]
+  , mkelem "table" [cls "table table-quiet table-nopaddingsides table-fix-first-col"]
     [ mk "tbody" $ trs [ yudu, lm, gilgilTrust, pembrokeHouse, hsk, caringHomesDB, caringHomesVarious ]
     ]
   ]

@@ -1,11 +1,1 @@
 <div .tweet>
-
-<div>
-  <p>
-    Want to hire me? #
-    Email me at #
-    <code>(\name domain -> name ++ "@" ++ domain) "jameshfisher" "gmail.com"
-    ! #
-    If you're a PGP user, #
-    <a href=@{StaticR keys_public_gpg}>here's my public key
-    .

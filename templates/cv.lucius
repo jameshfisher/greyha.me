@@ -48,3 +48,18 @@ section.aboutSection p:last-child {
 	float: right;
 	width: 47%;
 }
+
+
+table.table.table-fix-first-col th:first-child,
+table.table.table-fix-first-col td:first-child {
+  width: 150px;
+}
+
+q:before, q:after { content: "'"; }
+
+ul.listTable { margin: 9px 0; }
+ul.listTable li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}

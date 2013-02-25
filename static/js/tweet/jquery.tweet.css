@@ -1,12 +1,4 @@
-.tweet,
-.query {
-	font-size: 1.5em;
-}
-
 .tweet_list {
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
-	border-radius: 0.5em;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -16,7 +8,6 @@
 .tweet_list li {
 	overflow-y: auto;
 	overflow-x: hidden;
-	padding: 0.5em;
 	list-style-type: none;
 }
 
