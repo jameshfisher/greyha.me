@@ -15,6 +15,14 @@ body, .table th, .table td, p, li { line-height: 27px; }
 
 h1,h2,h3,h4,h5,h6 { line-height: 54px; }
 
+.table {
+  margin-bottom: 27px;
+
+  th, td {
+    padding: 0 0 27px 0;
+  }
+}
+
 table.table.table-quiet {
   th, td {
     border-top: none;
@@ -44,4 +52,56 @@ table.table.table-nopaddingsides td:last-child {
 
 a {
   color: #6B2500;
+}
+
+.navbar {
+  margin-bottom: 27px;
+
+  .nav > li > a {
+    line-height: 18px;
+    padding: 18px 10px;
+  }
+}
+
+@media print {
+  body {
+    margin: 25mm;
+  }
+
+  #greyhame-main-nav {
+    display: none;
+  }
+}
+
+@media screen {
+  html {
+    /* http://stackoverflow.com/questions/712689/css-div-stretch-100-page-height */
+    min-height: 100%;
+    position: relative;
+  }
+
+  div.show-griddle {
+    width: 20px;
+    height: 20px;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+
+  div.griddle {
+    background-image: url(@{StaticR img_grid_horizontal_png});
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin-top: -7px; /* shift to place text on lines */
+
+    z-index: 999;
+
+    pointer-events: none;
+  }
 }

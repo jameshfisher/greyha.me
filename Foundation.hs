@@ -74,7 +74,8 @@ instance Yesod App where
         pc <- widgetToPageContent $ do
             $(widgetFile "default-layout")
             addStylesheet $ StaticR css_bootstrap_css
-            addStylesheetRemote $ "http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic"
+            addStylesheetRemote "http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic"
+            addScriptRemote "http://code.jquery.com/jquery-1.9.1.min.js"
         hamletToRepHtml $(hamletFile "templates/default-layout-wrapper.hamlet")
 
     -- This is done to provide an optimization for serving static files from

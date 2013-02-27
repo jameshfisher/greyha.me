@@ -1,0 +1,12 @@
+(function ($) {
+  $(function () {
+    $(".griddle").css("display", "none");
+
+    $(".show-griddle").click(function () {
+      $(".griddle").css(
+        "display",
+        $(".griddle").css("display") === "block" ? "none" : "block"
+      );
+    });
+  });
+})(jQuery);

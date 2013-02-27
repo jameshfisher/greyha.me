@@ -1,9 +1,12 @@
-<div class="navbar navbar-inverse navbar-static-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href=@{HomeR}>greyha.me
-      <div class="nav-collapse collapse">
-        <ul class="nav">
+<div .griddle>
+<div .show-griddle>
+
+<div .navbar .navbar-inverse .navbar-static-top #greyhame-main-nav>
+  <div .navbar-inner>
+    <div .container>
+      <a .brand href=@{HomeR}>greyha.me
+      <div .nav-collapse .collapse>
+        <ul .nav>
           <li>
             <a href=@{HomeR}>Home
           <li>
@@ -11,7 +14,7 @@
           <li>
             <a href=@{ImportantR}>Shit that's important
 
-<div class="container">
+<div .container>
   $maybe msg <- mmsg
       <div #message>#{msg}
   
