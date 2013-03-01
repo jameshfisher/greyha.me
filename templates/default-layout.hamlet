@@ -1,11 +1,10 @@
 <div .griddle>
 <div .show-griddle>
 
-<div .navbar .navbar-inverse .navbar-static-top #greyhame-main-nav>
+<div .navbar .navbar-static-top #greyhame-main-nav>
   <div .navbar-inner>
     <div .container>
-      <a .brand href=@{HomeR}>greyha.me
-      <div .nav-collapse .collapse>
+      <div .span12>
         <ul .nav>
           <li>
             <a href=@{HomeR}>Home
@@ -18,4 +17,5 @@
   $maybe msg <- mmsg
       <div #message>#{msg}
   
-  ^{widget}
+  <div .span12>
+    ^{widget}

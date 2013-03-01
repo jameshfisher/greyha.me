@@ -13,7 +13,14 @@ body, p {
 body, p { font-size: 18px; }
 body, .table th, .table td, p, li { line-height: 27px; }
 
-h1,h2,h3,h4,h5,h6 { line-height: 54px; }
+h1,h2,h3,h4,h5,h6 {
+  line-height: 54px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+h1 { font-size: 54px; line-height: 108px; margin-bottom: 27px; }
+h2 { font-size: 36px; line-height:  81px; margin-bottom: 27px; }
+h3 { font-size: 27px; line-height:  54px; margin-bottom: 27px; }
+
 
 .table {
   margin-bottom: 27px;
@@ -54,14 +61,56 @@ a {
   color: #6B2500;
 }
 
-.navbar {
+
+/* override bootstrap navbars */
+.navbar#greyhame-main-nav {
   margin-bottom: 27px;
 
-  .nav > li > a {
-    line-height: 18px;
-    padding: 18px 10px;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-transform: uppercase;
+
+  .navbar-inner {
+    height: 54px;
+
+    border-radius: 0;
+
+    background-image: url(@{StaticR img_patterns_blackorchid_png});
+    background-gradient: none;
+
+    .container {
+      width: 940px; /* Override stupid setting in bootstrap */
+
+      .nav li {
+        a {
+          line-height: 18px;
+          padding: 18px 27px 18px 0;
+          color: hsl(21, 100%, 95%);
+
+          position: relative;
+
+          transition: top 200ms;
+          -webkit-transition: top 200ms;
+          -moz-transition: top 200ms;
+          -o-transition: top 200ms;
+        }
+
+        a:hover {
+          top: -2px;
+        }
+      }
+    }
   }
 }
+
+.center-block {
+  text-align: center;
+
+  > * {
+    display: inline-block !important;
+    text-align: left;
+  }
+}
+
 
 @media print {
   body {
