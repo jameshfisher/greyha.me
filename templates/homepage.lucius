@@ -1,4 +1,29 @@
- body {
-  background-image: url('/static/img/gandalf.jpg');
-  background-size: 500px;
+div.tweet {
+  ul.tweet_list {
+    overflow-y: visible;
+
+    li {
+      margin-bottom: 27px;
+
+      overflow-x: visible;
+      overflow-y: visible;
+
+      span.tweet_join,
+      span.tweet_time {
+        display: none;
+      }
+    }
+
+    li:first-child {
+      font-size: 1.5em;
+    }
+
+    li:nth-child(2) {
+      font-size: 1.3em;
+    }
+
+    li:nth-child(2) {
+      font-size: 1.3em;
+    }
+  }
 }
