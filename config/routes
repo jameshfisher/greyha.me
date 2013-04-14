@@ -5,4 +5,5 @@
 
 /          HomeR      GET
 /cv        CVR        GET
+/like      LikeR      GET
 /important ImportantR GET

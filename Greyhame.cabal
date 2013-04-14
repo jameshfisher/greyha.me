@@ -27,6 +27,7 @@ library
                      Handler.CV.Sections.Experience
                      Handler.CV.Sections.Skills
                      Handler.CV.Sections.Top
+                     Handler.Like
                      Handler.Important
 
     if flag(dev) || flag(library-only)

@@ -1,0 +1,6 @@
+<div .row>
+  <section .span6 #starred_github_projects>
+    <h2>Things on GitHub
+  <section .span6 #followed_twitter_feeds>
+    <h2>Things on Twitter
+

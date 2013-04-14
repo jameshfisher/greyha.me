@@ -11,6 +11,8 @@
           <li>
             <a href=@{CVR}>CV
           <li>
+            <a href=@{LikeR}>Stuff I like
+          <li>
             <a href=@{ImportantR}>Shit that's important
 
 <div .container>
