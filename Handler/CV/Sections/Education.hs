@@ -4,7 +4,7 @@ import Prelude
 import Text.XML.HXT.Core (XmlTree, ArrowXml, sattr, txt, mkelem)
 import Handler.CV.Common (h2, h3, ul, strong, link, cls, section, attrVal, mk, trs, q)
 import Handler.CV.Links (mkLink, Link(LinkCRGS, LinkGreyFriars, LinkMScIndividualProjectPresentation,
-  LinkCoursera,LinkCourseraScala, LinkCourseraScalaCertificate, LinkCourseraProgrammingLanguages))
+  LinkCoursera,LinkCourseraScala, LinkCourseraScalaCertificate, LinkCourseraProgrammingLanguages, LinkCourseraProgLangCertificate))
 
 educationSection :: (ArrowXml a) => a n XmlTree
 educationSection = section [cls "educationSection"]
@@ -16,7 +16,7 @@ educationSection = section [cls "educationSection"]
     [ mk "tbody" $ trs
       [ attrVal [txt "Jan.–Dec. 2013"] []
         [ mk "q" [ mkLink LinkCourseraProgrammingLanguages ]
-        , txt " at ", mkLink LinkCoursera, txt ". In progress."
+        , txt " at ", mkLink LinkCoursera, txt ". Completed with 96.7% (", mkLink LinkCourseraProgLangCertificate, txt ")."
         , txt " Submissions available on request at ", link "https://bitbucket.org/eegg/coursera-proglang" "https://bitbucket.org/eegg/coursera-proglang", txt "."
         ]
       , attrVal [txt "Sep.–Dec. 2012"] []

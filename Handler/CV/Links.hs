@@ -47,6 +47,7 @@ data Link
   | LinkCourseraScala
   | LinkCourseraScalaCertificate
   | LinkCourseraProgrammingLanguages
+  | LinkCourseraProgLangCertificate
   | LinkMeLinkedIn
   | LinkMeBitbucket
   | LinkMeGitHub
@@ -96,7 +97,8 @@ mkLink l = case l of
   LinkCoursera            -> link "https://www.coursera.org/"                                "Coursera"
   LinkCourseraScala       -> link "https://www.coursera.org/course/progfun"                  "Functional Programming Principles in Scala"
   LinkCourseraScalaCertificate -> link "/static/certificates/coursera_scala.pdf"             "certificate"
-  LinkCourseraProgrammingLanguages      -> link "https://www.coursera.org/course/proglang"                   "Programming Languages"
+  LinkCourseraProgrammingLanguages      -> link "https://www.coursera.org/course/proglang"   "Programming Languages"
+  LinkCourseraProgLangCertificate -> link "/static/certificates/coursera_proglang.pdf"       "certificate"
   LinkMeLinkedIn          -> link "http://www.linkedin.com/profile/view?id=34422393"         "LinkedIn"
   LinkMeBitbucket         -> link "https://bitbucket.org/eegg"                               "Bitbucket"
   LinkMeGitHub            -> link "http://github.com/eegg"                                   "GitHub"
