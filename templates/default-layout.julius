@@ -10,3 +10,13 @@
     });
   });
 })(jQuery);
+
+// Google analytics
+GoogleAnalyticsObject = 'ga';
+
+ga = {
+  l: 1 * new Date(),
+  q: ['create', 'UA-41172508-1', 'greyha.me', 'send', 'pageview']
+};
+
+$("<script async src='//www.google-analytics.com/analytics.js'>").insertAfter($('script')[0]);

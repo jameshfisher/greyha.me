@@ -1,43 +1,89 @@
 (function($) {
   $(function() {
 
-    function load_pages(url, cb, end) {
-      function go(cursor) {
-        if (cursor == 0) {
-          end();
-        } else {
-          $.getJSON(url + "&cursor=" + cursor, mut);
+    /** https://gist.github.com/monsur/706839 */
+    function parse_response_headers(header_str) {
+      var headers = {};
+      var headerPairs = header_str.split('\u000d\u000a');
+      for (var i = 0; i < headerPairs.length; i++) {
+        var headerPair = headerPairs[i];
+        // Can't use split() here because it does the wrong thing
+        // if the header value has the string ": " in it.
+        var index = headerPair.indexOf('\u003a\u0020');
+        if (index > 0) {
+          var key = headerPair.substring(0, index);
+          var val = headerPair.substring(index + 2);
+          headers[key.toLowerCase()] = val;
         }
       }
-      function mut(data, status, xhr) {
-        cb(data);
-        go(data.next_cursor);
-      }
-      $.getJSON(url, mut);
+      return headers;
     }
 
-    // Load all my GitHub likes
-    $.getJSON("https://api.github.com/users/jameshfisher/starred?per_page=100",
-    function(data, status, xhr) {
-      data.map(function(e) {
-        $("#starred_github_projects").append(
-          $("<div class='alert'>").append(
-            $("<a>")
-              .attr("href", e.html_url)
-              .text(e.full_name)));
+    /** https://gist.github.com/niallo/3109252 */
+    function parse_link_header(header) {
+      console.log("header: ", header);
+      var links = {};
+      header.split(',').map(function(p) {
+        var section = p.split(';');
+        links[section[1].replace(/rel="(.*)"/, '$1').trim()] = section[0].replace(/<(.*)>/, '$1').trim();
       });
-    });
+      return links;
+    }
+
+    function load_pages(url, next_url, page, end) {
+
+      function go(data, status, xhr) {
+        page(data);
+
+        var next = next_url(url, data, status, xhr);
+
+        next ? $.getJSON(next, go)
+             : end()
+             ;
+      }
+
+      $.getJSON(url, go);
+    }
+
+    function load_all(url, next_url, combine, cb) {
+      var all = [];
+      load_pages(url, next_url,
+        function (data) { all = combine(all, data); },
+        function () { cb(all); }
+        );
+    }
+
+    function onProp(prop) { return function (a,b) { return b[prop] - a[prop]; }; }
+
+    // Load my starred repos
+    load_all(
+      "https://api.github.com/users/jameshfisher/starred?per_page=100",
+      function (url, data, status, xhr) {
+        var l = parse_response_headers(xhr.getAllResponseHeaders()).link;
+        return l ? parse_link_header(l).next : null;
+      },
+      function (all, data) { return all.concat(data); },
+      function(repos) {
+        repos
+          .sort(onProp("watchers"))
+          .map(function (repo) {
+            console.log(repo);
+            $("#starred_github_projects").append(
+              $("<div class='alert'>").append(
+                $("<a>")
+                  .attr("href", repo.html_url)
+                  .text(repo.full_name)));
+          });
+      });
 
     // Load all my Twitter feeds
-    var users = [];
-    load_pages("https://api.twitter.com/1/friends.json?callback=?&screen_name=MrJamesFisher",
-      function(data, status, xhr) {
-        users = users.concat(data.users);
-      },
-      function() {
-        console.log(users);
+    load_all(
+      "https://api.twitter.com/1/friends.json?callback=?&screen_name=MrJamesFisher",
+      function (url, data, status, xhr) { return url + "&cursor=" + data.cursor; },
+      function (all, data) { return all.concat(data.users); },
+      function (users) {
         users
-          .sort(function(u1,u2) { return u2.followers_count - u1.followers_count; })
+          .sort(onProp("followers_count"))
           .map(function(user) {
             $("#followed_twitter_feeds").append(
               $("<div class='alert'>").append(
@@ -45,7 +91,6 @@
                   .attr("href", "https://twitter.com/" + user.screen_name)
                   .text(user.name)));
           });
-      }
-    );
+      });
   });
 })(jQuery);
