@@ -3,7 +3,5 @@
 /favicon.ico FaviconR GET
 /robots.txt RobotsR GET
 
-/          HomeR      GET
-/cv        CVR        GET
+/          CVR        GET
 /like      LikeR      GET
-/important ImportantR GET

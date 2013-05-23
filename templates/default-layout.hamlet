@@ -7,17 +7,33 @@
       <div .span12>
         <ul .nav>
           <li>
-            <a href=@{HomeR}>Home
-          <li>
             <a href=@{CVR}>CV
           <li>
             <a href=@{LikeR}>Stuff I like
+
+        <ul .nav .pull-right>
           <li>
-            <a href=@{ImportantR}>Shit that's important
+            <a href="https://github.com/jameshfisher" target="_blank">
+              GitHub
+          <li>
+            <a href="https://bitbucket.org/jameshfisher" target="_blank">
+              BitBucket
+          <li>
+            <a href="https://twitter.com/MrJamesFisher" target="_blank">
+              Twitter
+          <li>
+            <a href="http://uk.linkedin.com/in/jameshfisher" target="_blank">
+              LinkedIn
+          <li>
+            <a href="http://www.reddit.com/user/jameshfisher" target="_blank">
+              Reddit
+          <li>
+            <a href="https://www.facebook.com/jameshfisher" target="_blank">
+              Facebook
 
 <div .container>
   $maybe msg <- mmsg
       <div #message>#{msg}
-  
+
   <div .span12>
     ^{widget}

@@ -5,7 +5,6 @@ import Import
 import Prelude
 import Text.XML.HXT.Core (XmlTree, ArrowXml, sattr, txt, mkelem)
 import Handler.CV.Common (h2, ul, strong, link, cls, section, attrVal, email, obscure, csv, item, mk, trs, prop, htmlSpan, division)
-import Handler.CV.Links (mkLink, Link(LinkMeLinkedIn, LinkMeBitbucket, LinkMeGitHub, LinkMeReddit))
 
 -- WIP
 topSection' = [hamlet|
@@ -41,7 +40,6 @@ topSection = section (item "http://data-vocabulary.org/Person")
             , txt " (", link "/static/keys/public.gpg" "public key", txt ")"
             ]
           , attrVal [txt "Mobile"] [] [txt $ obscure "07951 498 897"]
-          , attrVal [txt "Find me"] [] $ csv $ map mkLink [ LinkMeLinkedIn, LinkMeBitbucket, LinkMeGitHub, LinkMeReddit ]
           ]
         ]
       ]

@@ -17,7 +17,7 @@
     }
 
     // Load all my GitHub likes
-    $.getJSON("https://api.github.com/users/eegg/starred?per_page=100",
+    $.getJSON("https://api.github.com/users/jameshfisher/starred?per_page=100",
     function(data, status, xhr) {
       data.map(function(e) {
         $("#starred_github_projects").append(
