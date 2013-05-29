@@ -3,8 +3,8 @@
 
 <div .navbar .navbar-static-top #greyhame-main-nav>
   <div .navbar-inner>
-    <div .container>
-      <div .span12>
+    <div .container-fluid>
+      <div .row-fluid>
         <ul .nav>
           <li>
             <a href=@{CVR}>CV
@@ -14,25 +14,25 @@
         <ul .nav .pull-right>
           <li>
             <a href="https://github.com/jameshfisher" target="_blank">
-              GitHub
+              GitHub⬀
           <li>
             <a href="https://bitbucket.org/jameshfisher" target="_blank">
-              BitBucket
+              BitBucket⬀
           <li>
             <a href="http://stackoverflow.com/users/229792/jameshfisher" target="_blank">
-              Stack Overflow
+              Stack Overflow⬀
           <li>
             <a href="https://twitter.com/MrJamesFisher" target="_blank">
-              Twitter
+              Twitter⬀
           <li>
             <a href="http://uk.linkedin.com/in/jameshfisher" target="_blank">
-              LinkedIn
+              LinkedIn⬀
           <li>
             <a href="http://www.reddit.com/user/jameshfisher" target="_blank">
-              Reddit
+              Reddit⬀
           <li>
             <a href="https://www.facebook.com/jameshfisher" target="_blank">
-              Facebook
+              Facebook⬀
 
 <div .container>
   $maybe msg <- mmsg
