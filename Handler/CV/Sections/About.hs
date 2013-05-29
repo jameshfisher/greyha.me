@@ -24,7 +24,7 @@ aboutSection = section [cls "aboutSection"]
         , txt "You like strong static typing and functional programming."
         , txt "You score at least 10 on the "
         , link "http://www.joelonsoftware.com/articles/fog0000000043.html" "Joel Test"
-        , "."
+        , txt "."
         ]
       ]
     ]
