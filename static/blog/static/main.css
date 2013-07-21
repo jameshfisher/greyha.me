@@ -1,0 +1,198 @@
+body { 
+  margin: 0;
+  background-color: #fffff5;
+  background-image: url("bg.png");
+  font-family: "Crimson Text";
+	text-rendering: optimizeLegibility;
+	line-height: 1.4em;
+}
+
+img.logo {
+    width: 15em;
+    height: 15em;
+    margin: 3.75em 7.5em 3.75em 7.5em;
+}
+
+div.main {
+    width: 30em;
+    margin: 0 auto 0 auto;
+}
+
+h1 {
+    font-size: 1.4em;
+    line-height: 1em;
+    font-weight: normal;
+    text-align: left;
+    margin: 6em 0 2em 0;
+}
+
+h2 {
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-size: 1.25em;
+    line-height: 1.12em; /* 1.4 / 1.25 */
+    margin: 1.12em 0 1.12em -2.24em;
+}
+
+div.abstract {
+  margin: 1em 0 1em 0;
+}
+
+div.abstract span.abstractWord {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+
+div#masthead {
+	float: right;
+	clear: both;
+
+  padding: 0.5em;
+	margin: 0;
+
+  background-color: #a00;
+  color: #fffff5;
+}
+
+div#masthead:hover {
+  background-color: black;
+}
+
+span.outdentHeader {
+    display: inline-block;
+    width: 2.24em;
+}
+
+p {
+    margin: 0;
+}
+
+p + p {
+    text-indent: 1em;
+}
+
+p * {
+    text-indent: 0;
+}
+
+a:link, a:visited, a:hover {
+    color: black;
+}
+
+a:hover {
+  color: #a00;
+}
+
+blockquote {
+    margin: 1.4em 2em 1.4em 2em;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    font-style: normal;
+}
+
+cite:before {
+    content: "—";
+}
+
+span.acronym {
+	text-transform: lowercase;
+	font-variant: small-caps;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 1.4em 0 1.4em 0;
+}
+
+li {
+}
+
+q:before { content: "‘"; }
+q:after { content: "’"; }
+
+q q:before { content: "“"; }
+q q:after { content: "”"; }
+
+div.sidebar {
+	width: 10em;
+	float: right;
+	clear: both;
+	margin-right: -12em;
+	font-size: 0.8em;
+	line-height: 1.75em; /* 1.4 / 0.8 */
+}
+
+table {
+	border-collapse: collapse;
+	border: solid black;
+	border-width: 1px 0 1px 0;
+}
+
+table thead tr {
+	border-bottom: 1px solid black;
+}
+
+table thead td {
+	font-weight: bold;
+}
+
+table td {
+	vertical-align: top;
+}
+
+img {
+	display: block;
+}
+
+img.widthAuto { width: auto; }
+img.widthFull { width: 100%; }
+
+figure {
+	display: block;
+	width: 100%;
+	margin: 1.4em 0 1.4em 0;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+.widescreen {
+	width: 42em;
+  float: right;
+  clear: both;
+  margin: 1.4em -12em 1.4em 0;
+}
+
+
+/* DISQUS */
+
+table.dsq-global-toolbar-container {
+  border: 0;
+}
+
+li.dsq-comment h3,
+div.dsq-pagination,
+div.dsq-trackback-url {
+  display: none;
+}
+
+li.dsq-comment div.dsq-comment-header {
+  background-image: none;
+  border: 0;
+  border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+li.dsq-comment div.dsq-comment-footer {
+  
+}
