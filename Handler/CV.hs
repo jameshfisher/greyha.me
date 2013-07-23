@@ -15,7 +15,6 @@ import Handler.CV.Common (mk, section, cls, division, p, link)
 import Handler.CV.Sections.Top (topSection)
 import Handler.CV.Sections.About (aboutSection)
 import Handler.CV.Sections.Education (educationSection)
-import Handler.CV.Sections.Experience (experienceSection)
 import Handler.CV.Sections.Skills (skillsSection)
 
 getCVR :: Handler RepHtml

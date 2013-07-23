@@ -2,7 +2,143 @@
 <section>#{conv topSection}
 <section>#{conv aboutSection}
 <section>#{conv educationSection}
-<section>#{conv experienceSection}
+<section>
+  <section .experienceSection>
+    <h2>
+      Experience
+
+    <table .table .table-quiet .table-no-paddingsides .table-fix-first-col>
+      <tbody>
+        <tr>
+          <th>May 2012–present
+          <td>
+            <p>
+              Software Developer at <strong><a href="http://www.yudu.com/">YUDU Media</a></strong>,
+              who produce a digital publishing platform.
+
+              I am currently the lead in a team of four YUDU developers
+              working alongside a team at <a href="http://softwire.com/">Softwire</a>.
+
+              I am working on
+              project management,
+              product design,
+              development,
+              bug fixes,
+              and maintenance.
+
+            <p>
+              On the server-side, technologies I use include
+              <a href="http://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>,
+              using the <a href="http://en.wikipedia.org/wiki/Spring_Framework">Spring Framework</a>;
+              <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>,
+              using <a href="http://en.wikipedia.org/wiki/Ramaze">Ramaze</a>/<a href="http://en.wikipedia.org/wiki/Ruby_on_Rails">Rails</a>;
+              and <a href="http://en.wikipedia.org/wiki/Oracle_Database">Oracle</a>
+              and <a href="http://en.wikipedia.org/wiki/MySQL">MySQL</a> databases.
+
+            <p>
+              I work on multiple clients to these servers.
+
+              I am of course familiar with
+              <a href="http://en.wikipedia.org/wiki/HTML">HTML</a>,
+              <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>,
+              <a href="http://en.wikipedia.org/wiki/CSS">CSS</a>,
+              and many libraries and tools,
+              such as <a href="http://jquery.com/">jQuery</a>
+              and <a href="http://lesscss.org/">LESS</a>.
+
+              I maintain two of our <q>readers</q> (applications for viewing digital books),
+              a <a href="http://en.wikipedia.org/wiki/Adobe_Flash">Flash</a> version for the web,
+              using <a href="http://en.wikipedia.org/wiki/ActionScript">ActionScript 2 and 3</a>;
+              and an <a href="http://en.wikipedia.org/wiki/Adobe_AIR">AIR</a> version
+              for desktop, Android, OS X, and iOS.
+
+            <p>
+              Tools we use include
+              <a href="http://git-scm.com/">git</a> and
+              <a href="https://code.google.com/p/gerrit/">Gerrit</a>.
+
+        <tr>
+          <th>2006–present
+          <td>
+            Director and Secretary of <strong><a href="http://lexdenmontessori.com/">Lexden Montessori</a></strong>,
+            a nursery in Colchester.
+
+            I have worked in business planning,
+            market research and advertising,
+            administration and secretarial duties,
+            and web design and maintenance for <a href="http://www.lexdenmontessori.com">www.<strong>lexdenmontessori.com</strong></a>.
+
+        <tr>
+          <th>2012–present
+          <td>
+            Branding, marketing consultancy, and web design for <strong><a href="http://gilgiltrust.org.uk/">The Gilgil Trust</a></strong>,
+            an organization providing young people around the town of Gilgil in Kenya
+            with shelter, health-care, and help in their education and careers.
+
+        <tr>
+          <th>2010
+          <td>
+            <p>
+              Branding for <strong><a href="http://www.pembrokehouse.sc.ke/">Pembroke House</a></strong>,
+              a private Kenyan prep school.
+
+            <p>
+              In the words of their Commercial Director,
+
+              <q>
+                James has worked with me on new brand designs for Harambee Schools Kenya <em>(see below)</em>, a charity,
+                and Pembroke House school, a prep school.
+
+                In both cases his work was of the highest quality,
+                and reflected a passion for design,
+                but also for getting under the skin of the organisation he is designing for.
+
+                I wouldn't hesitate to use James again for any design projects that I might have.
+
+        <tr>
+          <th>2010
+          <td>
+            <p>
+              Branding and web design for <strong><a href="http://www.hsk.org.uk/">Harambee Schools Kenya</a></strong>,
+              a charity building schools around Gilgil in rural Kenya.
+
+            <p>
+              <strong><a href="http://onlinemarketing.gwsmedia.com/2010/11/2nd-objective-of-charity-website-design.html">GWS Media gave the website an award</a></strong>,
+              commending its <q>plain, clear English; striking design, and beautiful images.</q>
+
+              To date, the new branding and website is known to have directly brought in <strong>£53,000 of funding</strong>,
+              including from <a href="http://www.ubm.com/">UBM</a> (the global media and comms giant)
+              and <a href="http://www.hsbc.co.uk/">HSBC</a>, who made HSK their official corporate charity after finding the website.
+
+        <tr>
+          <th>2009
+          <td>
+            Developing an internal database-driven system for managing care homes and <a href="http://en.wikipedia.org/wiki/CSCI">CSCI</a> reports
+            for <strong><a href="http://www.caringhomes.org/">Caring Homes</a>.
+
+<!--
+
+caringHomesVarious =
+  attrVal [txt "2008"] []
+  [ txt "Various responsibilities at ", mk "strong" [mkLink LinkCaringHomes]
+  , txt ", including accountancy and financial planning, due diligence, insurance of plant, and remote I.T. support."
+  ]
+
+<tr>
+  <th>2005</th>
+  <td>First prize in a sixth-form art competition</td>
+</tr>
+<tr>
+  <th>2004&ndash;6</th>
+  <td>I.T. technician at <a href="http://www.crgs.co.uk/">Colchester Royal Grammar School</a></td>
+</tr>
+<tr>
+  <th>2004&ndash;5</th>
+  <td>Membership in a <strong><a href="http://www.young-enterprise.org.uk/">Young Enterprise</a></strong> company, qualifying with a <strong>distinction</strong></td>
+</tr>-->
+
+
+
 <section>#{conv skillsSection}
 <section .endNode .print>
   <p>

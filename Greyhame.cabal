@@ -24,7 +24,6 @@ library
                      Handler.CV.Links
                      Handler.CV.Sections.About
                      Handler.CV.Sections.Education
-                     Handler.CV.Sections.Experience
                      Handler.CV.Sections.Skills
                      Handler.CV.Sections.Top
                      Handler.Like
