@@ -1,0 +1,7 @@
+<h1>Blog
+
+<h2>Margins
+<iframe src="/static/blog/margins.html" style="width: 100%;"></iframe>
+
+<h2>Thatcher effect
+<iframe src="/static/blog/thatcher-effect.html" style="width: 100%;"></iframe>

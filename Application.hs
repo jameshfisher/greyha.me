@@ -16,6 +16,7 @@ import Network.HTTP.Conduit (newManager, def)
 -- Don't forget to add new modules to your cabal file!
 import Handler.Home
 import Handler.CV
+import Handler.Blog
 import Handler.Like
 import Handler.Important
 

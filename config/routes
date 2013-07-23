@@ -4,4 +4,5 @@
 /robots.txt RobotsR GET
 
 /          CVR        GET
+/blog      BlogR      GET
 /like      LikeR      GET

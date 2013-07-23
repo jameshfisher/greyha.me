@@ -9,6 +9,8 @@
           <li>
             <a href=@{CVR}>CV
           <li>
+            <a href=@{BlogR}>Blog
+          <li>
             <a href=@{LikeR}>Stuff I like
 
         <ul .nav .pull-right>
