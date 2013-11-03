@@ -31,9 +31,8 @@ topSection = section (item "http://data-vocabulary.org/Person")
         [ mk "tbody" $ trs
           [ attrVal [txt "Birth date"] [] [txt "October 1987"]
           , attrVal [txt "Address"] ([prop "address"]++(item "http://data-vocabulary.org/Address")) $ csv
-              [ htmlSpan [prop "locality"] [txt "Highgate"]
+              [ htmlSpan [prop "locality"] [txt "Finchley Central"]
               , htmlSpan [prop "region"] [txt "London"]
-              , htmlSpan [prop "postal-code"] [txt "N6 4AG"]
               ]
           , attrVal [txt "Email"] []
             [ email "jameshfisher@gmail.com"
