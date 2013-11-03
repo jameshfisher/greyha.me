@@ -10,16 +10,16 @@
     <table .table .table-quiet .table-no-paddingsides .table-fix-first-col>
       <tbody>
         <tr>
-          <th>May 2012–present
+          <th>May 2012–Sep 2013
           <td>
             <p>
               Software Developer at <strong><a href="http://www.yudu.com/">YUDU Media</a></strong>,
               who produce a digital publishing platform.
 
-              I am currently the lead in a team of four YUDU developers
+              I was the lead in a team of four YUDU developers
               working alongside a team at <a href="http://softwire.com/">Softwire</a>.
 
-              I am working on
+              I worked on
               project management,
               product design,
               development,
@@ -27,7 +27,7 @@
               and maintenance.
 
             <p>
-              On the server-side, technologies I use include
+              On the server-side, technologies I used include
               <a href="http://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>,
               using the <a href="http://en.wikipedia.org/wiki/Spring_Framework">Spring Framework</a>;
               <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>,
@@ -36,7 +36,7 @@
               and <a href="http://en.wikipedia.org/wiki/MySQL">MySQL</a> databases.
 
             <p>
-              I work on multiple clients to these servers.
+              I worked on multiple clients to these servers.
 
               I am of course familiar with
               <a href="http://en.wikipedia.org/wiki/HTML">HTML</a>,
@@ -46,14 +46,14 @@
               such as <a href="http://jquery.com/">jQuery</a>
               and <a href="http://lesscss.org/">LESS</a>.
 
-              I maintain two of our <q>readers</q> (applications for viewing digital books),
+              I maintained two of our <q>readers</q> (applications for viewing digital books),
               a <a href="http://en.wikipedia.org/wiki/Adobe_Flash">Flash</a> version for the web,
               using <a href="http://en.wikipedia.org/wiki/ActionScript">ActionScript 2 and 3</a>;
               and an <a href="http://en.wikipedia.org/wiki/Adobe_AIR">AIR</a> version
               for desktop, Android, OS X, and iOS.
 
             <p>
-              Tools we use include
+              Tools I used include
               <a href="http://git-scm.com/">git</a> and
               <a href="https://code.google.com/p/gerrit/">Gerrit</a>.
 
