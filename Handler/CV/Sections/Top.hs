@@ -39,6 +39,7 @@ topSection = section (item "http://data-vocabulary.org/Person")
             , txt " (", link "/static/keys/public.gpg" "public key", txt ")"
             ]
           , attrVal [txt "Mobile"] [] [txt $ obscure "07951 498 897"]
+          , attrVal [txt "Website"] [] [txt "http://greyha.me/"]
           ]
         ]
       ]
