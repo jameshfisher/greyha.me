@@ -10,8 +10,7 @@ aboutSection = section [cls "aboutSection"]
     [ division [cls "span6"]
       [ p $ interspace
         [ strong "About me:"
-        , txt "I am a developer and designer with an M.Sc. in Computing Science with a distinction."
-        , txt "I currently work as a software developer at YUDU Media."
+        , txt "I am a software developer and designer with an M.Sc. in Computing Science with a distinction."
         ]
       ]
     , division [cls "span6"]
