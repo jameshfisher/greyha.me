@@ -18,7 +18,7 @@ educationSection = section [cls "educationSection"]
         [ mk "q" [ mkLink LinkCourseraReactiveProgramming ]
         , txt " at ", mkLink LinkCoursera, txt ". In progress."
         ]
-      , attrVal [txt "Jan.–Dec. 2013"] []
+      , attrVal [txt "Jan.–Apr. 2013"] []
         [ mk "q" [ mkLink LinkCourseraProgrammingLanguages ]
         , txt " at ", mkLink LinkCoursera, txt ". Completed with 96.7% (", mkLink LinkCourseraProgLangCertificate, txt ")."
         , txt " Submissions available on request at ", link "https://bitbucket.org/eegg/coursera-proglang" "https://bitbucket.org/eegg/coursera-proglang", txt "."
